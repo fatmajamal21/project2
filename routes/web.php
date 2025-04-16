@@ -17,5 +17,18 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', function () {
-    return view('first');
+    return view('EasyFolio/master');
+});
+
+// Route::get('/', function () {
+//     return view('EasyFolio/home');
+// });
+// Route::get('/', function () {
+//     return view('EasyFolio/about');
+// });
+// Route::get('/', function () {
+//     return view('EasyFolio/services');
+// });
+Route::get('/', function () {
+    return view('EasyFolio/forms/contact');
 });
