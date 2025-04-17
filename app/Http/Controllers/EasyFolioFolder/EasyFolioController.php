@@ -12,22 +12,27 @@ class EasyFolioController extends Controller
     {
         return view('EasyFolio.home');
     }
-
-
     public function about()
     {
         return view('EasyFolio.about');
     }
-
     public function services()
     {
         return view('EasyFolio.services');
     }
-
     public function contact()
     {
-        return view('EasyFolio.Forms.contact');
+        return view('EasyFolio.forms.contact');
     }
+
+
+
+
+
+
+
+
+
     public function ok()
     {
         return view('EasyFolio.Forms.ok');
@@ -44,3 +49,31 @@ class EasyFolioController extends Controller
         return redirect()->route('EasyFolio.Forms.ok');
     }
 }
+
+
+// namespace App\Http\Controllers\EasyFolioFolder;
+
+// use App\Http\Controllers\Controller;
+
+// class EasyFolioController extends Controller
+// {
+//     public function home()
+//     {
+//         return view('EasyFolio.home');
+//     }
+
+//     public function about()
+//     {
+//         return view('EasyFolio.about');
+//     }
+
+//     public function services()
+//     {
+//         return view('EasyFolio.services');
+//     }
+
+//     public function contact()
+//     {
+//         return view('EasyFolio.contact');
+//     }
+// }

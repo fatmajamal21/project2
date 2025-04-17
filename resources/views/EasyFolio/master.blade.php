@@ -50,10 +50,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{{ route('home') }}" class="active">Home</a></li>
-          <li><a href="{{route('about')}}">About</a></li>
-          <li><a href="{{route('services')}}">Services</a></li>
-          <li><a href="{{route('contact')}}">Contact</a></li>
+          <li><a href="{{ route('EasyFolio.home') }}" class="active">Home</a></li>
+          <li><a href="{{route('EasyFolio.about')}}">About</a></li>
+          <li><a href="{{route('EasyFolio.services')}}">Services</a></li>
+          <li><a href="{{ route('EasyFolio.forms.contact') }}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>

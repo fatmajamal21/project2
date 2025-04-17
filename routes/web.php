@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-// use App\Http\Controllers\EasyFolioFolder\EasyFolioController;
 use App\Http\Controllers\EasyFolioFolder\EasyFolioController;
 
 /*
@@ -19,11 +18,39 @@ Route::prefix('EasyFolio')->name('EasyFolio.')->controller(EasyFolioController::
     Route::get('/home', 'home')->name('home');
     Route::get('/about', 'about')->name('about');
     Route::get('/services', 'services')->name('services');
-    Route::get('/Forms/contact', 'contact')->name('contact');
-    Route::get('/Forms/ok', 'ok')->name('ok');
+    Route::get('/Forms/contact', 'contact')->name('forms.contact');
     Route::post('/Forms/contact', 'postcontact')->name('postcontact');
+    Route::get('/Forms/ok', 'ok')->name('ok');
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Route::prefix('EasyFolio')->name('EasyFolio.')->controller(EasyFolioController::class)->group(function () {
+//     Route::get('/home', 'home')->name('home');
+//     Route::get('/about', 'about')->name('about');
+//     Route::get('/services', 'services')->name('services');
+//     Route::get('/contact', 'contact')->name('contact');
+// });
 
 
 
