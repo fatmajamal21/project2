@@ -50,10 +50,8 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{{route('home')}}" class="active">Home</a></li>
+          <li><a href="{{ route('home') }}" class="active">Home</a></li>
           <li><a href="{{route('about')}}">About</a></li>
-          {{-- <li><a href="#resume">Resume</a></li> --}}
-          {{-- <li><a href="#portfolio">Portfolio</a></li> --}}
           <li><a href="{{route('services')}}">Services</a></li>
           <li><a href="{{route('contact')}}">Contact</a></li>
         </ul>
