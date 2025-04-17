@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\EasyFolioFolder;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
-use Illuminate\Foundation\Validation\ValidatesRequests;
-use Illuminate\Routing\Controller as BaseController;
+use App\Http\Controllers\Controller;  // تأكد من استيراد هذا الكلاس
+use Illuminate\Http\Request;
 
-class Controller extends BaseController
+class EasyFolioController extends Controller
 {
-    use AuthorizesRequests, ValidatesRequests;
+    public function home()
+    {
+        return "مرحبًا بك في الصفحة الرئيسية!";
+    }
 }
