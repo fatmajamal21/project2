@@ -20,11 +20,11 @@ Route::prefix('EasyFolio')->name('EasyFolio.')->controller(EasyFolioController::
     Route::get('/services', 'services')->name('services');
     Route::get('/Forms/contact', 'contact')->name('forms.contact');
     Route::post('/Forms/contact', 'postcontact')->name('postcontact');
-    Route::get('/Forms/ok', 'ok')->name('ok');
+    Route::get('/Forms/ok', 'ok')->name('forms.ok');
 });
 
 
-
+  
 
 
 

@@ -43,35 +43,36 @@
           <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
             <div class="card-body p-4 p-lg-5">
 
-              <form action="forms/contact.php" method="post" class="php-email-form" action="{{route('EasyFolio.postcontact')}}">
+              <form method="post" class="php-email-form" action="{{route('EasyFolio.postcontact')}}">
                @csrf
                 <div class="row gy-4">
 
                   <div class="col-12">
-                    <input type="text" name="name" class="form-control  is-invalid 
+                    <input type="text" name="name" class="form-control 
                     @error('name') 
                     is-invalid
                     @enderror " 
-                      placeholder="Your Name" required=""> 
+                      placeholder="Your Name" > 
                       @error('name') 
                          <small calss="invalid-feedback">{{$message}}</small>
                          @enderror
                   </div>
 
                   <div class="col-12 ">
-                    <input type="email" class="form-control   @error('name') 
+                    <input type="email" class="form-control   @error('email') 
                     is-invalid
-                    @enderror " name="email" placeholder="Your Email" required="">
-                    @error('name') 
+                    @enderror " 
+                    name="email" placeholder="Your Email">
+                    @error('email') 
                          <small calss="invalid-feedback">{{$message}}</small>
                          @enderror
                   </div>
 
                   <div class="col-12">
-                    <input type="text" class="form-control   @error('name') 
+                    <input type="text" class="form-control   @error('subject') 
                     is-invalid
-                    @enderror " name="subject" placeholder="Subject" required="">
-                    @error('name') 
+                    @enderror " name="subject" placeholder="Subject" >
+                    @error('subject') 
                          <small calss="invalid-feedback">{{$message}}</small>
                          @enderror
                   </div>
@@ -79,16 +80,16 @@
                   <div class="col-12">
                     <textarea class="form-control   @error('name') 
                     is-invalid
-                    @enderror " name="message" rows="6" placeholder="Message" required="">
+                    @enderror " name="message" rows="6" placeholder="Message" >
                     @error('name') 
                     <small calss="invalid-feedback">{{$message}}</small>
                     @enderror</textarea>
                   </div>
 
                   <div class="col-12 text-center">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    {{-- <div class="loading">Loading</div> --}}
+                    {{-- <div class="error-message"></div> --}}
+                    {{-- <div class="sent-message">Your message has been sent. Thank you!</div> --}}
 
                     <button type="submit" class="btn btn-submit w-100">Submit Message</button>
                   </div>

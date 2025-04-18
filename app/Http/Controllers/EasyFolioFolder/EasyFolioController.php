@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 
 class EasyFolioController extends Controller
 {
-
     public function home()
     {
         return view('EasyFolio.home');
@@ -24,15 +23,6 @@ class EasyFolioController extends Controller
     {
         return view('EasyFolio.forms.contact');
     }
-
-
-
-
-
-
-
-
-
     public function ok()
     {
         return view('EasyFolio.Forms.ok');
@@ -40,40 +30,11 @@ class EasyFolioController extends Controller
     public function postcontact(Request $request)
     {
         $request->validate([
-            'name' => 'required | string | min:3 | max:15',
-            'email' => 'required',
-            'subject' => 'required',
-            'message' => 'required'
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|max:255',
+            'subject' => 'required|string|max:255',
+            'message' => 'required|string|max:1000',
         ]);
-
         return redirect()->route('EasyFolio.Forms.ok');
     }
 }
-
-
-// namespace App\Http\Controllers\EasyFolioFolder;
-
-// use App\Http\Controllers\Controller;
-
-// class EasyFolioController extends Controller
-// {
-//     public function home()
-//     {
-//         return view('EasyFolio.home');
-//     }
-
-//     public function about()
-//     {
-//         return view('EasyFolio.about');
-//     }
-
-//     public function services()
-//     {
-//         return view('EasyFolio.services');
-//     }
-
-//     public function contact()
-//     {
-//         return view('EasyFolio.contact');
-//     }
-// }
